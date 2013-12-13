@@ -22,7 +22,7 @@
 
 - (instancetype)initWithClientID:(NSString *)identifier andSecret:(NSString *)secret;
 
-- (void)presentGoogleSigninFromViewController:(UIViewController *)controller;
+- (void)presentSigninFromViewController:(UIViewController *)controller;
 
 - (void)mirrorNotificationBasic:(NSDictionary *)notification;
 

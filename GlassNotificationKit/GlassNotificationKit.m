@@ -47,7 +47,7 @@ static NSString *clientSecret = nil;
 
 # pragma mark - Google Auth
 
-- (void)presentGoogleSigninFromViewController:(UIViewController *)controller{
+- (void)presentSigninFromViewController:(UIViewController *)controller{
     GTMOAuth2Authentication *auth = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:appID
                                                                                           clientID:clientID
                                                                                       clientSecret:clientSecret];
@@ -74,10 +74,10 @@ static NSString *clientSecret = nil;
 
 - (NSString *)buildTimelineCard:(NSDictionary*)userInfo{
     // build out the timeline card as an HTML string to be sent via postNotificationWithMessage
-    // includes adding timestamp, app name, title of the card if possible, and message. external images are allowed too.
-    // demo HTML from PostOffice
-    // return [NSString stringWithFormat:@"<article><section><p class=\"blue\">%@:%@</h1><br><br><p>%@</p></section></article>", application, [view title] != nil ? [view title] : @"", message]
-    return nil;
+    NSString *message = userInfo[@"aps"][@"message"];
+    NSString *title = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+    
+    return [NSString stringWithFormat:@"<section><h1>%@</h1><p class=\"text-auto-size\" style=\"height: auto; font-size: 46px;\">%@</p></section></article>", title, message];
 }
 
 # pragma mark - Mirror API
@@ -85,7 +85,6 @@ static NSString *clientSecret = nil;
 - (void)postNotificationWithHTML:(NSString *)HTML{
     _mirrorService = [[GTLServiceMirror alloc] init];
     
-    NSLog(@"POSTING NOTIFICATION");
     GTMOAuth2Authentication *auth = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:appID
                                                                                           clientID:clientID
                                                                                       clientSecret:clientSecret];
