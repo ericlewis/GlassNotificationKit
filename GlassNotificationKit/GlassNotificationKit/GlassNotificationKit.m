@@ -38,6 +38,10 @@ static NSString *clientSecret = nil;
     return self;
 }
 
-# pragma mark - Google Auth Code
+# pragma mark - Google Auth
+
+# pragma mark - APNS Parsing
+
+# pragma mark - Mirror API
 
 @end
