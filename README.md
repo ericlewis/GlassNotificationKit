@@ -1,4 +1,4 @@
 GlassNotificationKit
 ====================
 
-Easy to use framework for adding Google Glass push notification mirroring for your app
+Easy to use framework for adding Google Glass push notification mirroring to your app
