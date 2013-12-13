@@ -2,8 +2,8 @@
 //  GlassNotificationKitTests.m
 //  GlassNotificationKitTests
 //
-//  Created by 1debit on 12/13/13.
-//  Copyright (c) 2013 1debit. All rights reserved.
+//  Created by Eric Lewis on 12/13/13.
+//  Copyright (c) 2013 Eric Lewis. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

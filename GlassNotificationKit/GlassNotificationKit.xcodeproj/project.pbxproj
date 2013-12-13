@@ -188,7 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = 1debit;
+				ORGANIZATIONNAME = "Eric Lewis";
 			};
 			buildConfigurationList = 4D1CC8BA185B833800D1826A /* Build configuration list for PBXProject "GlassNotificationKit" */;
 			compatibilityVersion = "Xcode 3.2";
