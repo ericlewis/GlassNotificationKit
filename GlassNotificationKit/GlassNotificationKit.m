@@ -40,7 +40,6 @@ static NSString *clientSecret = nil;
     return self;
 }
 
-// easily mirror a notice from application:didReceiveRemoteNotification:fetchCompletionHandler
 - (void)mirrorNotificationBasic:(NSDictionary *)notification{
     [self postNotificationWithHTML:[self buildTimelineCard:notification]];
 }
