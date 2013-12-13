@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-//#import "GTLMirror.h"
-//#import "GTMOAuth2ViewControllerTouch.h"
+#import "GTLMirror.h"
+#import "GTMOAuth2ViewControllerTouch.h"
 
 @interface GlassNotificationKit : NSObject
 
-//@property (nonatomic, strong) GTLServiceMirror *mirrorService;
+@property (nonatomic, strong) GTLServiceMirror *mirrorService;
 
 + (GlassNotificationKit *)sharedInstanceWithClientID:(NSString *)clientID andSecret:(NSString *)secret;
 

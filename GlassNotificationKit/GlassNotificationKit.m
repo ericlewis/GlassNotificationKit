@@ -48,7 +48,7 @@ static NSString *clientSecret = nil;
 # pragma mark - Google Auth
 
 - (void)presentGoogleSigninFromViewController:(UIViewController *)controller{
-    /*GTMOAuth2Authentication *auth = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:appID
+    GTMOAuth2Authentication *auth = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:appID
                                                                                           clientID:clientID
                                                                                       clientSecret:clientSecret];
     if (auth == nil){
@@ -67,7 +67,7 @@ static NSString *clientSecret = nil;
     }
     else{
         self.mirrorService.authorizer = auth;
-    }*/
+    }
 }
 
 # pragma mark - Card Builder
@@ -83,7 +83,7 @@ static NSString *clientSecret = nil;
 # pragma mark - Mirror API
 
 - (void)postNotificationWithHTML:(NSString *)HTML{
-    /*_mirrorService = [[GTLServiceMirror alloc] init];
+    _mirrorService = [[GTLServiceMirror alloc] init];
     
     NSLog(@"POSTING NOTIFICATION");
     GTMOAuth2Authentication *auth = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:appID
@@ -92,7 +92,7 @@ static NSString *clientSecret = nil;
     self.mirrorService.authorizer = auth;
     
     GTLMirrorTimelineItem *item = [[GTLMirrorTimelineItem alloc] init];
-    item.title = application;
+    item.title = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     item.html = HTML;
     item.bundleId = @"com.1debit.GNK";
     GTLMirrorNotificationConfig *notificationConfig = [[GTLMirrorNotificationConfig alloc] init];
@@ -115,7 +115,6 @@ static NSString *clientSecret = nil;
                        NSLog(@"error: %@", error);
                        NSLog(@"%@", [(GTLMirrorTimelineItem *)object html]);
                    }];
-     */
 }
 
 @end

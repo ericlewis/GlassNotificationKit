@@ -1,0 +1,164 @@
+PODS:
+  - Google-API-Client (0.0.1):
+    - Google-API-Client/Common
+    - Google-API-Client/Networking
+    - Google-API-Client/Objects
+    - Google-API-Client/Services
+    - Google-API-Client/Utilities
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Common (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Networking (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Objects (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services (0.0.1):
+    - Google-API-Client/Services/AdSense
+    - Google-API-Client/Services/Analytics
+    - Google-API-Client/Services/Blogger
+    - Google-API-Client/Services/Books
+    - Google-API-Client/Services/Calendar
+    - Google-API-Client/Services/CivicInfo
+    - Google-API-Client/Services/Compute
+    - Google-API-Client/Services/Discovery
+    - Google-API-Client/Services/Drive
+    - Google-API-Client/Services/Groupssettings
+    - Google-API-Client/Services/Latitude
+    - Google-API-Client/Services/Licensing
+    - Google-API-Client/Services/Mirror
+    - Google-API-Client/Services/Orkut
+    - Google-API-Client/Services/Plus
+    - Google-API-Client/Services/Shopping
+    - Google-API-Client/Services/Storage
+    - Google-API-Client/Services/Tasks
+    - Google-API-Client/Services/Urlshortener
+    - Google-API-Client/Services/YouTube
+    - Google-API-Client/Services/YouTubeAnalytics
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/AdSense (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Analytics (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Blogger (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Books (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Calendar (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/CivicInfo (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Compute (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Discovery (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Drive (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Groupssettings (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Latitude (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Licensing (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Mirror (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Orkut (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Plus (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Shopping (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Storage (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Tasks (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/Urlshortener (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/YouTube (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Services/YouTubeAnalytics (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - Google-API-Client/Utilities (0.0.1):
+    - gtm-oauth2
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2 (0.0.2):
+    - gtm-oauth2/Core
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core (0.0.2):
+    - gtm-oauth2/Core/Mac
+    - gtm-oauth2/Core/Touch
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Mac (0.0.2):
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Touch (0.0.2):
+    - GTMHTTPFetcher
+    - SBJson
+  - GTMHTTPFetcher (0.0.1):
+    - SBJson
+  - SBJson (3.2)
+
+DEPENDENCIES:
+  - Google-API-Client
+
+SPEC CHECKSUMS:
+  Google-API-Client: a5aea65083895ad2fa8eeca4747478215c9ac934
+  gtm-oauth2: 92e23fbb4ab77c4f441ffc95e2bbbf174ea589c1
+  GTMHTTPFetcher: b0af09f18ec87e7a5edeffcc8cb6449fdbf0e83f
+  SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
+
+COCOAPODS: 0.28.0
