@@ -24,6 +24,6 @@
 
 - (void)presentSigninFromViewController:(UIViewController *)controller;
 
-- (void)mirrorNotificationBasic:(NSDictionary *)notification;
+- (void)mirrorPushNotification:(NSDictionary *)notification;
 
 @end

@@ -40,7 +40,7 @@ static NSString *clientSecret = nil;
     return self;
 }
 
-- (void)mirrorNotificationBasic:(NSDictionary *)notification{
+- (void)mirrorPushNotification:(NSDictionary *)notification{
     [self postNotificationWithHTML:[self buildTimelineCard:notification]];
 }
 
@@ -72,7 +72,6 @@ static NSString *clientSecret = nil;
 # pragma mark - Card Builder
 
 - (NSString *)buildTimelineCard:(NSDictionary*)userInfo{
-    // build out the timeline card as an HTML string to be sent via postNotificationWithMessage
     NSString *message = userInfo[@"aps"][@"message"];
     NSString *title = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     
